@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('Hãy nhập số bất kì')
+   
+        if (!isNaN(a)&&a%2==0) {
+            document.write('số này là số chẵn')
+        }else if(!isNaN(a)&&a%2!=0){
+            document.write('số này là số lẻ')
+        }
+        else{
+            document.write('không hợp lệ')
+        }
+    </script>
+</body>
+</html>

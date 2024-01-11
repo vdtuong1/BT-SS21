@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          let soNhapVao = parseInt(prompt("Nhập vào một số (từ 2 đến 8):"));
+        if (!isNaN(soNhapVao) && soNhapVao >= 2 && soNhapVao <= 8) {
+          let ngayTrongTuan;
+          switch (soNhapVao) {
+              case 2:
+                  ngayTrongTuan = "Monday";
+                  break;
+              case 3:
+                  ngayTrongTuan = "Tuesday";
+                  break;
+              case 4:
+                  ngayTrongTuan = "Wednesday";
+                  break;
+              case 5:
+                  ngayTrongTuan = "Thursday";
+                  break;
+              case 6:
+                  ngayTrongTuan = "Friday";
+                  break;
+              case 7:
+                  ngayTrongTuan = "Saturday";
+                  break;
+              case 8:
+                  ngayTrongTuan = "Sunday";
+                  break;
+          }
+          document.write(ngayTrongTuan)
+      } else {
+          document.write("Số nhập vào không hợp lệ. Hãy nhập số từ 2 đến 8.");
+      }
+      
+    </script>
+  </body>
+</html>
